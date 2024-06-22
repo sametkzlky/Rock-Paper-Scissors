@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Kağıt Makas Oyunu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Taş Kağıt Makas Oyunu </h1>
+        </div>
+        <div class="score">
+            <div class="score-table">
+                <h3>Sen</h3>
+                <h2 id="score">0</h2>
+            </div> 
+            <div class="score-table">
+                <h3>Bilgisayar</h3>
+                <h2 id="scorePc">0</h2>
+            </div> 
+        </div>    
+        <div class="container-cover">
+            <div class="container-cover-img">
+                <div onclick="play('tas')"><img class="choice-img" src="./image/tas.jpg" alt=""></div>
+                <div onclick="play('kagıt')"><img class="choice-img" src="./image/kagıt.jpg" alt=""></div>
+                <div onclick="play('makas')"><img class="choice-img" src="./image/makas.jpg" alt=""></div>
+            </div>
+            <p style="font-weight: bold;">VS</p>
+            <div id="result"></div>
+        </div>
+    </div>
+ 
+    
+    <script src="./script.js"></script> 
+</body>
+</html>
